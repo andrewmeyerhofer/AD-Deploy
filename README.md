@@ -219,56 +219,62 @@ Created a new organizational unit for clients, then I drag and dropped client-1 
 <br />
 
 <p>
+<img width="1272" height="903" alt="image" src="https://github.com/user-attachments/assets/6f47c92c-b974-4d4b-b25a-7caaf5f3a2fa" />
+
+
+</p>
+<p>
+I logged into Client-1 as Jane. I right clicked the start menu and went to system, then clicked remote desktop.
+</p>
+<br />
+
+<p>
+<img width="1263" height="930" alt="image" src="https://github.com/user-attachments/assets/bb642eb1-2371-4bfa-a110-de16fbadb451" />
+
+
+</p>
+<p>
+After clicking the add button, I entered Domain Users as the object name then clicked OK.
+</p>
+<br />
+
+<p>
+<img width="413" height="82" alt="image" src="https://github.com/user-attachments/assets/36106281-3b4d-4d5a-8b3a-6c20367ade2f" />
+
+
+</p>
+<p>
+I logged back into dc-1 as Jane.
+</p>
+<br />
+
+<p>
+<img width="1038" height="937" alt="image" src="https://github.com/user-attachments/assets/831c17e1-53b9-4855-bc2b-c3720a9541e9" />
+
+
+</p>
+<p>
+I then pasted a script into Powershell that will create a bunch of new users. I also saved it to the VM desktop. I also changed the value for users (down to 100), and set the password.
+</p>
+<br />
+
+<p>
+<img width="933" height="648" alt="image" src="https://github.com/user-attachments/assets/b4f8966c-cb4a-4d78-bcf8-35c8d669c9d1" />
+
+
+
+</p>
+<p>
+I opened up AD users and computers again, and went to the Employees folder.
+</p>
+<br />
+
+<p>
 <img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" /> next
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
-
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
-
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
-
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
-
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
-
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I picked the random user account cit.sel to user for testing. I logged out of Client-1 as Jane and logged in as cit.sel.
 </p>
 <br />
 
