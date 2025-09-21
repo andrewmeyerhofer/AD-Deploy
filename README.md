@@ -270,11 +270,99 @@ I opened up AD users and computers again, and went to the Employees folder.
 <br />
 
 <p>
+<img width="562" height="678" alt="image" src="https://github.com/user-attachments/assets/37572902-82b3-4691-b6f5-7a5d24c73177" />
+
+
+</p>
+<p>
+I picked the random user account cit.sel to user for testing. I logged out of Client-1 as Jane. Now lets simulate an account lock-out.
+</p>
+<br />
+
+<p>
+<img width="553" height="588" alt="image" src="https://github.com/user-attachments/assets/c47ce913-8a55-4b27-ab62-5f807f68b96b" />
+
+
+</p>
+<p>
+Using cit.sel's account, I attempted to log into client one at least ten times with the wrong password. Since there is no group lock-out policy enabled, it still let me enter the account as normal once I put in the correct password.
+</p>
+<br />
+
+<p>
+<img width="931" height="651" alt="image" src="https://github.com/user-attachments/assets/368be591-7ca8-488b-b677-58947f8427ec" />
+
+
+</p>
+<p>
+In the dc-1 vm using Jane's account... Using the run command I typed gpmc.msc to open group policy management.
+</p>
+<br />
+
+<p>
+<img width="1052" height="765" alt="image" src="https://github.com/user-attachments/assets/2f836830-2644-4049-b2cc-6ce37fe9711e" />
+
+
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
+<img width="993" height="772" alt="image" src="https://github.com/user-attachments/assets/c8546392-d72f-4c1c-a762-a0332c770918" />
+
+
+</p>
+<p>
+Set to 6 invalid logout attempts.
+</p>
+<br />
+
+<p>
+<img width="723" height="403" alt="image" src="https://github.com/user-attachments/assets/cf5d06cd-57e9-4a89-90be-361eb10978e0" />
+
+
+</p>
+<p>
+Logged into client-1 as Jane and opened command prompt.
+</p>
+<br />
+
+<p>
+<img width="682" height="178" alt="image" src="https://github.com/user-attachments/assets/7700bcbf-1e2a-402a-92bc-ab4569b6bac1" />
+
+
+</p>
+<p>
+I then went logged into client-1 with the wrong password six times as cit.sel, and got an error message.
+</p>
+<br />
+
+<p>
 <img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" /> next
 
 </p>
 <p>
-I picked the random user account cit.sel to user for testing. I logged out of Client-1 as Jane and logged in as cit.sel.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
+<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
+
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
+<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
+
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
