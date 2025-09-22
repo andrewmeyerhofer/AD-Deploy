@@ -340,64 +340,71 @@ I then went logged into client-1 with the wrong password six times as cit.sel, a
 <br />
 
 <p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" /> next
+<img width="957" height="713" alt="image" src="https://github.com/user-attachments/assets/0716ff42-199d-4bd6-b8cb-323cda2655f2" />
+
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
-
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In dc-1 as Jane, I went to AD users and computers and double clicked cit.sel's user profile. Under properties, I went to the Account tab and clicked the unlock account check box. I then clicked apply and okay.
 </p>
 <br />
 
 <p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
+<img width="1553" height="791" alt="image" src="https://github.com/user-attachments/assets/6fcf871a-c5a4-4f29-bda8-8d8537348a70" />
+
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
-
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I then logged back into client-1 with cit.sel and everything worked properly.
 </p>
 <br />
 
 <p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
+<img width="927" height="658" alt="image" src="https://github.com/user-attachments/assets/e9311963-0b0c-46a9-92bd-c041cebdc085" />
+
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
-
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, I deisabled cit.sel's account as Jane.
 </p>
 <br />
 
 <p>
-<img width="1818" height="721" alt="image" src="https://github.com/user-attachments/assets/d67a6fc9-69d1-45ca-b4de-0f686505a617" />
+<img width="685" height="157" alt="image" src="https://github.com/user-attachments/assets/2717a059-c9b8-4aad-9f61-6cd9acbcca06" />
+
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After trying to login as cit.sel on client-1, I get this error message. I then enabled the account on dc-1 and the account worked again.
+</p>
+<br />
+
+<p>
+<img width="977" height="681" alt="image" src="https://github.com/user-attachments/assets/00879558-9690-40a4-9440-7e65a7014639" />
+
+
+</p>
+<p>
+I then opened event viewer on dc-1 and clicked the security drop down under windows logs. Here I can see all of the logon attempts. 
+</p>
+<br />
+
+<p>
+<img width="1392" height="945" alt="image" src="https://github.com/user-attachments/assets/3e8a791b-f26c-4157-b3b3-5655525113c5" />
+
+
+</p>
+<p>
+By right clicking the security tab, I clicked the find option and searched for cit.sel. I then clicked the next button to view some of the failed logins.
+</p>
+<br />
+
+<p>
+<img width="1835" height="945" alt="image" src="https://github.com/user-attachments/assets/e7329f15-d45b-4e77-87e2-a62ed48567d3" />
+
+
+</p>
+<p>
+I then logged into client-1 as cit.sel and opened event viewer as an admin. I then supplied Jane's credentials so I would have access to the security files. Here I can view the specific login failures for this VM from when I failed to login 6 times. This concludes the AD deployment project.
 </p>
 <br />
