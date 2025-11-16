@@ -5,7 +5,7 @@
 </p>
 
 <h1>Deploying Active Directory</h1>
-Add Summary After<br />
+Add Summary After (use lab checklist) <br />
 
 <h2>Environments and Technologies Used</h2>
 
