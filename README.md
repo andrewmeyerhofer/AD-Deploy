@@ -176,7 +176,7 @@ I then logged out of the dc-1 VM and logged back in as jane_admin.
 
 </p>
 <p>
-I also used Janes credentials to join the domain, and restarted the client-1 VM.
+Next, I logged into the client-1 VM as myself in order to join it to the domain. Once in client-1, I selected System from the Windows start menu and chose the "Rename this PC (advanced)" option. I then clicked the change button in the Computer Name tab and chose the Member of a Domain option. I entered mydomain.com as the domain name then clicked ok. A login prompt then opened in which I entered Jane's credentials to authorize the joining of the domain. Finally, I got a message saying I was now part of mydomain.com, and I was prompted to restart the client-1 VM.
 </p>
 <br />
 
@@ -186,7 +186,7 @@ I also used Janes credentials to join the domain, and restarted the client-1 VM.
 
 </p>
 <p>
-I dc-1 as jane...
+Once client-1 fully restarted, I went back to dc-1 as Jane. In ADUC, I clicked on the Computers folder under mydomain.com. From there, I was able to see that client-1 was successfully added as a member of the domain. 
 </p>
 <br />
 
@@ -196,7 +196,7 @@ I dc-1 as jane...
 
 </p>
 <p>
-Created a new organizational unit for clients, then I drag and dropped client-1 into the new clients folder.
+I then created a new organizational unit named _Clients for organizational purposes. I dragged client-1 from the Computers folder and dropped it into the _Clients folder, then clicked refresh.
 </p>
 <br />
 
