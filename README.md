@@ -206,7 +206,7 @@ I then created a new organizational unit named _Clients for organizational purpo
 
 </p>
 <p>
-I logged into Client-1 as Jane. I right clicked the start menu and went to system, then clicked remote desktop.
+Next, I logged back into client-1 as Jane. I right clicked the start menu and went to system, then clicked remote desktop. From there, I clicked the Remote Desktop users button.
 </p>
 <br />
 
@@ -216,7 +216,7 @@ I logged into Client-1 as Jane. I right clicked the start menu and went to syste
 
 </p>
 <p>
-After clicking the add button, I entered Domain Users as the object name then clicked OK.
+I then clicked the Add button and entered Domain Users as the object name. Once MYDOMAIN\Domain Users populated, I clicked the ok button.
 </p>
 <br />
 
@@ -226,7 +226,7 @@ After clicking the add button, I entered Domain Users as the object name then cl
 
 </p>
 <p>
-I logged back into dc-1 as Jane.
+Next, I went back to dc-1 as Jane with the intent of adding users to the _Employees OU. I started by searching for Powershell ISE in the Windows start menu. Once I found it, I right-clicked it and selected "Run as administrator."
 </p>
 <br />
 
@@ -236,7 +236,7 @@ I logged back into dc-1 as Jane.
 
 </p>
 <p>
-I then pasted a script into Powershell that will create a bunch of new users. I also saved it to the VM desktop. I also changed the value for users (down to 100), and set the password.
+Once I was in Powershell, I pasted a script (created by CourseCareers) that's purpose was to create a bunch of new users in the _Employees OU. In the top lines of the script, I changed the password and set the value for accounts created to 100. I also saved the script to the VM desktop.
 </p>
 <br />
 
@@ -247,7 +247,7 @@ I then pasted a script into Powershell that will create a bunch of new users. I 
 
 </p>
 <p>
-I opened up AD users and computers again, and went to the Employees folder.
+After successfully running the script, I opened up ADUC and went to the _Employees OU. The folder was now filled with 100 randomly generated user account names. 
 </p>
 <br />
 
@@ -257,7 +257,7 @@ I opened up AD users and computers again, and went to the Employees folder.
 
 </p>
 <p>
-I picked the random user account cit.sel to user for testing. I logged out of Client-1 as Jane. Now lets simulate an account lock-out.
+From the list, I picked the account cit.sel to use for testing. Using this account, the first thing I wanted to test was an account lock-out. I started by logging out of client-1 as Jane and logging back in as cit.sel. Once I confirmed that cit.sel could successfully login, I logged back out.
 </p>
 <br />
 
@@ -267,7 +267,7 @@ I picked the random user account cit.sel to user for testing. I logged out of Cl
 
 </p>
 <p>
-Using cit.sel's account, I attempted to log into client one at least ten times with the wrong password. Since there is no group lock-out policy enabled, it still let me enter the account as normal once I put in the correct password.
+Using cit.sel's account, I attempted to log into client-1 at least ten times with the wrong password. Since there was no group lock-out policy enabled, I was still able to enter the VM as normal once I put in the correct password.
 </p>
 <br />
 
@@ -277,7 +277,7 @@ Using cit.sel's account, I attempted to log into client one at least ten times w
 
 </p>
 <p>
-In the dc-1 vm using Jane's account... Using the run command I typed gpmc.msc to open group policy management.
+In the dc-1 vm using Jane's account... Using the run command I typed gpmc.msc to open group policy management. next
 </p>
 <br />
 
