@@ -277,7 +277,7 @@ Using cit.sel's account, I attempted to log into client-1 at least ten times wit
 
 </p>
 <p>
-In the dc-1 vm using Jane's account... Using the run command I typed gpmc.msc to open group policy management. next
+I then went back to dc-1 as Jane to change the group lock-out policy. Using Run from the Windows menu, I typed gpmc.msc to open Group Policy Management. Once the policy manager opened, I went to the Default Domain Policy section under mydomain.com. I then right-clicked and selected the edit option. 
 </p>
 <br />
 
