@@ -287,7 +287,7 @@ I then went back to dc-1 as Jane to change the group lock-out policy. Using Run 
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After clicking the edit button, the Group Policy Management Editor opened. I then selected the dropdown for Windows Settings, followed by Security Settings, then Account Lockout Policy. From there, I double-clicked the Account lockout duration option which opened up the Account lockout duration Properties menu. Under the Security Policy Settings, I chose the option to define the policy setting myself. I selected 30 minutes for the lockout duration, then clicked ok. 
 </p>
 <br />
 
@@ -297,7 +297,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Set to 6 invalid logout attempts.
+The Policy Settings automatically updated once I entered the lockout duration, but I decided to change the lockout threshold from 5 to 6 invalid logon attempts. 
 </p>
 <br />
 
@@ -307,7 +307,7 @@ Set to 6 invalid logout attempts.
 
 </p>
 <p>
-Logged into client-1 as Jane and opened command prompt.
+I then logged into client-1 as Jane and opened command prompt in order to force group policy to update immediately. I used the command gpupdate /force, which successfully updated the group policy. 
 </p>
 <br />
 
@@ -317,7 +317,7 @@ Logged into client-1 as Jane and opened command prompt.
 
 </p>
 <p>
-I then went logged into client-1 with the wrong password six times as cit.sel, and got an error message.
+Now that a lockout policy was enabled, I logged out of client-1 as Jane and attempted to test the policy with cit.sel. I purposely inputted the wrong password six times, then got an error message telling me the account had been locked.
 </p>
 <br />
 
@@ -327,7 +327,7 @@ I then went logged into client-1 with the wrong password six times as cit.sel, a
 
 </p>
 <p>
-In dc-1 as Jane, I went to AD users and computers and double clicked cit.sel's user profile. Under properties, I went to the Account tab and clicked the unlock account check box. I then clicked apply and okay.
+In order to unlock the account, I went back to dc-1 as Jane and opened ADUC. From there, I double-clicked cit.sel's user profile in the _Employees OU. Under properties, I went to the Account tab and clicked the unlock account check box. I then clicked Apply and okay.
 </p>
 <br />
 
@@ -337,7 +337,7 @@ In dc-1 as Jane, I went to AD users and computers and double clicked cit.sel's u
 
 </p>
 <p>
-I then logged back into client-1 with cit.sel and everything worked properly.
+I then logged back into client-1 as cit.sel (using the correct password) with no issues.
 </p>
 <br />
 
@@ -347,7 +347,7 @@ I then logged back into client-1 with cit.sel and everything worked properly.
 
 </p>
 <p>
-Next, I deisabled cit.sel's account as Jane.
+I also wanted to test what would happen if I disabled cit.sel's account. I went into ADUC as Jane, right-clicked cit.sel's account, then selected the Disable Account option.
 </p>
 <br />
 
@@ -357,7 +357,7 @@ Next, I deisabled cit.sel's account as Jane.
 
 </p>
 <p>
-After trying to login as cit.sel on client-1, I get this error message. I then enabled the account on dc-1 and the account worked again.
+I then attempted to login to client-1 as cit.sel, but I got an error message saying my account had been disabled. In order to fix this, I right-clicked the account in ADUC and selected the Enable Account option. 
 </p>
 <br />
 
@@ -367,7 +367,7 @@ After trying to login as cit.sel on client-1, I get this error message. I then e
 
 </p>
 <p>
-I then opened event viewer on dc-1 and clicked the security drop down under windows logs. Here I can see all of the logon attempts. 
+Next, I opened Event Viewer on dc-1 and clicked the security drop-down under Windows logs. Here I could see all the logon attempts made recently.
 </p>
 <br />
 
@@ -377,7 +377,7 @@ I then opened event viewer on dc-1 and clicked the security drop down under wind
 
 </p>
 <p>
-By right clicking the security tab, I clicked the find option and searched for cit.sel. I then clicked the next button to view some of the failed logins.
+I then right-clicked the Security tab and clicked the Find option, which allowed me to search for cit.sel. After clicking Find Next, I was able to see all the failed logon attempts made by cit.sel specifically.
 </p>
 <br />
 
@@ -387,6 +387,6 @@ By right clicking the security tab, I clicked the find option and searched for c
 
 </p>
 <p>
-I then logged into client-1 as cit.sel and opened event viewer as an admin. I then supplied Jane's credentials so I would have access to the security files. Here I can view the specific login failures for this VM from when I failed to login 6 times. This concludes the AD deployment project.
+Finally, I logged into client-1 as cit.sel and opened Event Viewer as an admin. I then supplied Jane's credentials so I would have access to the security files. Here I could view the specific logon failures for this VM. This concludes the Deploying Active Directory project.
 </p>
 <br />
