@@ -14,7 +14,7 @@ In this project, my main goals were to install and configure Active Directory Do
 - Creation and configuration of a Domain Admin user.
 - Creation of new organizational units within Active Directory Users and Computers (ADUC).
 - Joining of client-1 VM to the domain.
-- Setup Remote Desktop for non-administrative users on client-1.
+- Remote Desktop setup on client-1.
 - Creation of random user accounts using Powershell.
 - Simulation of a user account lockout.
 - Simulation of disabling a user account.
