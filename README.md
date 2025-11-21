@@ -5,7 +5,20 @@
 </p>
 
 <h1>Deploying Active Directory</h1>
-Add Summary After (use lab checklist) <br />
+In this project, my main goals were to install and configure Active Directory Domain Services and simulate interactions between a domain contoller and a client on the domain. The initial setup for this project (creating the VMs and disabling the Windows Firewall) took place in the previous project titled "VM Creation in Microsoft Azure." This project is dense, so I provided a brief overview of what I accomplished below. <br />
+
+<h2>Overview of Objectives</h2>
+
+- Installation of AD Domain Services on dc-1 VM.
+- Creation of a new domain: mydomain.com.
+- Creation and configuration of a Domain Admin user.
+- Creation of new organizational units within Active Directory Users and Computers (ADUC).
+- Joining of client-1 VM to the domain.
+- Setup Remote Desktop for non-administrative users on client-1.
+- Creation of random user accounts using Powershell.
+- Simulation of a user account lockout.
+- Simulation of disabling a user account.
+- Observation of Security logs.
 
 <h2>Environments and Technologies Used</h2>
 
@@ -27,7 +40,7 @@ Add Summary After (use lab checklist) <br />
 
 </p>
 <p>
-I started by logging into the dc-1 VM (I created it in the "VM Creation in Microsoft Azure" project). The Server Manager dashboard opened upon logging in. 
+I started by logging into the dc-1 VM. The Server Manager dashboard opened upon logging in. 
 </p>
 <br />
 
